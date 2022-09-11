@@ -1,112 +1,112 @@
-.header {
-  &_nav {
-    display: block;
+// .header {
+//   &_nav {
+//     display: block;
 
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      gap: 50px;
-      margin-left: 96px;
-      padding-left: 0;
-    }
+//     @media screen and (min-width: $tablet) {
+//       display: flex;
+//       gap: 50px;
+//       margin-left: 96px;
+//       padding-left: 0;
+//     }
 
-    &-item {
-      @media screen and (max-width: $tablet) {
-        display: block;
-        margin-bottom: 32px;
-      }
-    }
+//     &-item {
+//       @media screen and (max-width: $tablet) {
+//         display: block;
+//         margin-bottom: 32px;
+//       }
+//     }
 
-    &-link {
-      @extend %link;
-      display: block;
-      letter-spacing: 0.02em;
-      font-weight: 500;
+//     &-link {
+//       @extend %link;
+//       display: block;
+//       letter-spacing: 0.02em;
+//       font-weight: 500;
 
-      font-size: 40px;
-      line-height: 1.18;
+//       font-size: 40px;
+//       line-height: 1.18;
 
-      color: $title-text-color;
-      transition: color $transitionCubic;
+//       color: $title-text-color;
+//       transition: color $transitionCubic;
 
-      @media screen and (min-width: $tablet) {
-        font-size: 14px;
-        line-height: 1.14;
-        padding-bottom: 32px;
-        padding-top: 32px;
+//       @media screen and (min-width: $tablet) {
+//         font-size: 14px;
+//         line-height: 1.14;
+//         padding-bottom: 32px;
+//         padding-top: 32px;
 
-        align-items: center;
-      }
+//         align-items: center;
+//       }
 
-      &:hover,
-      &:focus {
-        color: $accent-color;
-      }
-    }
-  }
+//       &:hover,
+//       &:focus {
+//         color: $accent-color;
+//       }
+//     }
+//   }
 
-  &_contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+//   &_contacts {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 32px;
 
-    @media screen and (min-width: $tablet) {
-      padding-left: 0;
-      margin-left: auto;
-      gap: 10px;
-    }
+//     @media screen and (min-width: $tablet) {
+//       padding-left: 0;
+//       margin-left: auto;
+//       gap: 10px;
+//     }
 
-    @media screen and (min-width: $desktop) {
-      display: flex;
-      flex-direction: row;
-      gap: 50px;
-    }
+//     @media screen and (min-width: $desktop) {
+//       display: flex;
+//       flex-direction: row;
+//       gap: 50px;
+//     }
 
-    &-link {
-      @extend %link;
-      display: block;
-      letter-spacing: 0.02em;
-      font-weight: 500;
+//     &-link {
+//       @extend %link;
+//       display: block;
+//       letter-spacing: 0.02em;
+//       font-weight: 500;
 
-      font-size: 40px;
-      line-height: 1.18;
+//       font-size: 40px;
+//       line-height: 1.18;
 
-      color: $primary-text-color;
-      transition: color $transitionCubic;
+//       color: $primary-text-color;
+//       transition: color $transitionCubic;
 
-      @media screen and (min-width: $tablet) {
-        font-size: 14px;
-        line-height: 1.14;
+//       @media screen and (min-width: $tablet) {
+//         font-size: 14px;
+//         line-height: 1.14;
 
-        align-items: center;
-      }
+//         align-items: center;
+//       }
 
-      @media screen and (min-width: $desktop) {
-        padding-bottom: 32px;
-        padding-top: 32px;
-      }
-      // @extend %link;
-      // font-size: 14px;
-      // line-height: 1.14;
-      // letter-spacing: 0.02em;
-      // font-weight: 500;
-      // color: $title-text-color;
-      // padding-top: 32px;
-      // padding-bottom: 32px;
-      // // display: flex;
-      // align-items: center;
-      // color: $primary-text-color;
+//       @media screen and (min-width: $desktop) {
+//         padding-bottom: 32px;
+//         padding-top: 32px;
+//       }
+//       // @extend %link;
+//       // font-size: 14px;
+//       // line-height: 1.14;
+//       // letter-spacing: 0.02em;
+//       // font-weight: 500;
+//       // color: $title-text-color;
+//       // padding-top: 32px;
+//       // padding-bottom: 32px;
+//       // // display: flex;
+//       // align-items: center;
+//       // color: $primary-text-color;
 
-      // transition: color $transitionCubic;
+//       // transition: color $transitionCubic;
 
-      &:hover,
-      &:focus {
-        color: $accent-color;
-      }
-    }
+//       &:hover,
+//       &:focus {
+//         color: $accent-color;
+//       }
+//     }
 
-    &-icon {
-      @extend %icon;
-      margin-right: 10px;
-    }
-  }
-}
+//     &-icon {
+//       @extend %icon;
+//       margin-right: 10px;
+//     }
+//   }
+// }
