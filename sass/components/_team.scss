@@ -1,0 +1,65 @@
+.team {
+  &_section {
+    @extend %section;
+    background-color: $background-card;
+  }
+
+  &_container {
+    @extend %container;
+  }
+
+  &_title {
+    @extend %main-title;
+  }
+
+  &_item {
+    background-color: $primary-background-color;
+    box-shadow: $card-shadow;
+    border-radius: 0px 0px 4px 4px;
+
+    flex-basis: calc(100% - 30px);
+
+    @media screen and (min-width: $tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
+  }
+
+  &_list {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &_img {
+    display: block;
+  }
+
+  &_name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $title-text-color;
+    margin-bottom: 10px;
+  }
+
+  &_description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &_profession {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
+}

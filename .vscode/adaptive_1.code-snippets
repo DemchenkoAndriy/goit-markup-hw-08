@@ -1,0 +1,8 @@
+
+{
+    "Snippet Number One":{
+        "prefix": ["*md"],
+        "body": "@media screen and (min-width: //$desktop) {}",
+        "description": "It's just for ruSO"
+    }
+}

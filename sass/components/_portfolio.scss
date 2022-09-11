@@ -1,0 +1,155 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  margin-bottom: 50px;
+
+  &_btn {
+    @extend %btn;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    /*  */
+
+    background-color: $background-card;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+
+    padding: 6px 22px;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &_current,
+  &_btn:hover,
+  &_btn:focus {
+    color: $title-text-color2;
+    background-color: $accent-color;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    /* transition: color, background-color 7250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  }
+}
+
+.portfolio {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  &_section {
+    @extend %section;
+  }
+
+  &_container {
+    @extend %container;
+  }
+}
+
+.card {
+  width: calc((100% - 30px));
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  .card_img {
+    display: block;
+  }
+
+  &_link {
+    @extend %link;
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: $card-shadow;
+    }
+
+    &:hover .card_overlay_text,
+    &:focus .card_overlay_text {
+      transform: translateY(-100%);
+      transition: transform 250ms ease;
+    }
+  }
+
+  &_description {
+    border-left: 1px solid $border-card;
+    border-right: 1px solid $border-card;
+    border-bottom: 1px solid $border-card;
+    flex-grow: 1;
+    // padding-top: 20px;
+    // padding-bottom: auto;
+    // padding-left: 24px;
+    // padding-right: 24px;
+
+    padding: 20px 24px;
+  }
+
+  &_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+    margin-bottom: 4px;
+  }
+
+  &_subtitle {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+
+  &_overlay {
+    position: relative;
+
+    overflow: hidden;
+
+    /* transition: transform 250ms ease; */
+    &_text {
+      position: absolute;
+      bottom: -100%;
+      width: 100%;
+      height: 100%;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 63px;
+      padding-bottom: 63px;
+      font-size: 18px;
+      line-height: 1.56;
+      /* or 156% */
+      // overflow-y: scroll;
+      letter-spacing: 0.03em;
+
+      color: $primary-background-color;
+      background-color: rgba(33, 150, 243, 0.9);
+      transform: translateY(0%);
+      transition: transform 250ms ease;
+    }
+  }
+}
+
+/*  icon  */
+
+/* overlay */

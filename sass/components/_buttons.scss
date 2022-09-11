@@ -1,0 +1,68 @@
+.btn {
+  @extend %btn;
+
+  &__menu {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 2;
+
+    //     padding: 0;
+    //     margin: 0;
+    //     margin-left: auto;
+    border: none;
+
+    background-color: transparent;
+    //     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__icon--burger {
+    display: none;
+
+    .btn__menu.is-open & {
+      display: block;
+    }
+  }
+
+  &__icon--close {
+    .btn__menu.is-open & {
+      display: none;
+    }
+  }
+}
+
+.btn__menu.is-open {
+  position: absolute;
+}
+
+.current {
+  color: $accent-color;
+  position: relative;
+
+  &::after {
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      bottom: -1.5%;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+}

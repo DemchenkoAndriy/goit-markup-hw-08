@@ -1,0 +1,52 @@
+.activity {
+  &_title {
+    @extend %main-title;
+  }
+
+  &_section {
+    @extend %section;
+    padding-top: 0;
+
+    @media screen and (max-width: $desktop0) {
+      display: none;
+    }
+  }
+  &_container {
+    @extend %container;
+  }
+
+  &_list {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+  }
+
+  &_item {
+    position: relative;
+  }
+
+  &_img {
+    display: block;
+  }
+
+  &_text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primary-background-color;
+    background: rgba(47, 48, 58, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+  }
+}
