@@ -26,7 +26,7 @@
     font-family: inherit;
 
     padding: 6px 22px;
-
+    box-shadow: none;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,7 +139,10 @@
       font-size: 18px;
       line-height: 1.56;
       /* or 156% */
-      // overflow-y: scroll;
+      @media screen and (max-width: $mobile) {
+        overflow-y: scroll;
+      }
+
       letter-spacing: 0.03em;
 
       color: $primary-background-color;

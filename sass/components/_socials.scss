@@ -35,6 +35,7 @@
   &_mobile {
     &-list {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 64px;
       @media screen and (min-width: $tablet) {
         display: none;
