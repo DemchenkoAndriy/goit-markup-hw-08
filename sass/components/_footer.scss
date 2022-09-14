@@ -7,9 +7,6 @@
     @media screen and (min-width: $desktop) {
       margin-right: auto;
     }
-    @media screen and (max-width: $desktop) {
-      margin-bottom: 60px;
-    }
   }
 
   &_section {
@@ -29,6 +26,9 @@
     }
 
     &-tablet {
+      @media screen and (max-width: $desktop) {
+        margin-bottom: 60px;
+      }
       @media screen and (min-width: $tablet) {
         display: flex;
         justify-content: space-around;
@@ -62,7 +62,7 @@
       margin-right: 70px;
     }
 
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: $tablet) {
       margin-bottom: 60px;
     }
   }
